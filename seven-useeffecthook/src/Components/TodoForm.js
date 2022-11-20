@@ -22,7 +22,7 @@ const TodoForm = (addTodos) => {
   };
 
   return (
-    <Form onSubmit={handleSubmit}>
+    <Form>
       <FormGroup>
         <InputGroup>
           <Input
@@ -33,7 +33,9 @@ const TodoForm = (addTodos) => {
             value={todoString}
             onChange={(e) => setTodoString(e.target.value)}
           />
-          <Button color="success">ADD</Button>
+          <Button onClick={handleSubmit} color="success">
+            ADD
+          </Button>
         </InputGroup>
       </FormGroup>
     </Form>
