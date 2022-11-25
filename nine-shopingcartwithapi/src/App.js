@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-toastify/dist/ReactToastify.css";
-import "./App.css";
 
 import { Container, Row, Col } from "reactstrap";
 import { ToastContainer, toast } from "react-toastify";
 
-import BuyPage from "./components/BuyPage";
-import Cart from "./components/Cart";
+import BuyPage from "./Components/BuyPage";
+import Cart from "./Components/Cart";
 
 const App = () => {
   const [cartItem, setCartItem] = useState([]);

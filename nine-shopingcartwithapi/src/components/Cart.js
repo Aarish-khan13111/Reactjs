@@ -27,7 +27,7 @@ const Cart = (CartItem, buyNow, removeItem) => {
           <ListGroupItem key={item.id}>
             <Row>
               <Col>
-                <img height={80} src={item.tinyImage} alt=""></img>
+                <img height={80} src={item.tinyImage} alt="###"></img>
               </Col>
               <Col className="text-center">
                 <div className="text-primary">{item.productName}</div>

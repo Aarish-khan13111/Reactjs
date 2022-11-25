@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import Axios from "axios";
 import CartItem from "./cartItem";
 
-import { random, commerce } from "faker";
+import { random, randAmount } from "@ngneat/falso";
+
 import { Container, Col, Row } from "reactstrap";
 
 // const apiKey = "Insert_your_key_here";
@@ -22,15 +23,15 @@ const BuyPage = ({ addInCart }) => {
   // }
 
   const fetchPhotos = async () => {
-    const { data } = await Axios.get(localurl);
+    const { data } = await Axios.get(localurl, {});
 
     const { photos } = data;
 
     const allProduct = photos.map((photos) => ({
-      smallImage: photos.src.medium,
-      tinyImage: photos.src.tiny,
+      smallImage: photos.src?.medium,
+      tinyImage: photos.src?.tiny,
       productName: random.word(),
-      productPrice: commerce.price(),
+      productPrice: randAmount.price(),
       id: random.uuid(),
     }));
 
