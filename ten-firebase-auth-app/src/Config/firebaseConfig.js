@@ -1,0 +1,10 @@
+const firebaseConfig = {
+  apiKey: "AIzaSyCB7XjnZHm5s19y3eQZ3rRHUquBhbdaFKI",
+  authDomain: "mygitapp-797b5.firebaseapp.com",
+  projectId: "mygitapp-797b5",
+  storageBucket: "mygitapp-797b5.appspot.com",
+  messagingSenderId: "1075763093592",
+  appId: "1:1075763093592:web:e97a4f8ef0163ef13e2a2d",
+  measurementId: "G-8NZS9FLRVW",
+};
+export default firebaseConfig;
